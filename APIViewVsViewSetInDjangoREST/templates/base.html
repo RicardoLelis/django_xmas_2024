@@ -7,13 +7,14 @@
     <title>Books</title>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="{% static 'css/tailwind.css' %}" rel="stylesheet">
+    <link href="{% static 'fontawesome/css/all.min.css' %}" rel="stylesheet">
 
 </head>
 <body class="bg-gray-100">
     <nav class="bg-blue-600 p-4 text-white">
         <div class="container mx-auto flex justify-between items-center">
             <a href="{% url 'book_list' %}" class="text-lg font-bold">Book Manager</a>
-            <a href="{% url 'book_add' %}" class="bg-white text-blue-600 px-4 py-2 rounded">Add Book</a>
+            <a href="{% url 'book_add' %}" class="bg-white text-blue-600 px-4 py-2 rounded"><i class="fas fa-plus"></i> Add Book</a>
         </div>
     </nav>
     <div class="container mx-auto py-8">
