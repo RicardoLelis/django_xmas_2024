@@ -13,7 +13,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 # Tutorial source:
 # 1 - https://medium.com/@lohit-behera/building-a-simple-web-application-with-django-and-react-dbfbe055ac0c
+# 2 - https://medium.com/@lohit-behera/integrating-django-with-vite-react-a346f829045d
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -66,7 +68,9 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, '..', 'frontend', 'dist'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -135,3 +139,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+ASSETS_ROOT =  os.path.join(BASE_DIR, '..', 'frontend', 'dist', 'assets')
+
+ASSETS_URL = '/assets/'
