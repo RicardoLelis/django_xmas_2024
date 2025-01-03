@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Successful</title>
+</head>
+<body>
+    <h1>Document Uploaded Successfully!</h1>
+    <p><strong>File Name:</strong> {{ file_metadata.name }}</p>
+    <p><strong>File Size:</strong> {{ file_metadata.size }} bytes</p>
+    <br>
+    <a href="{% url 'upload_document' %}">
+        <button>Upload Another Document</button>
+    </a>
+</body>
+</html>
