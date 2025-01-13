@@ -3,3 +3,4 @@ djangorestframework
 django-cors-headers
 pydantic
 Pillow
+djangorestframework-simplejwt

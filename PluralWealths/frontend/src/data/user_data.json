@@ -1,0 +1,36 @@
+{
+    "lastLogin": "2024-01-10 10:00 AM",
+    "netWorthChartData": [20, 100, 10, 45, 200, 200, 5],
+    "transactions": [
+       {
+         "id":1,
+         "date": "2024-01-09",
+        "description": "Rent payment",
+        "amount": -1200
+       },
+      {
+         "id":2,
+         "date": "2024-01-08",
+        "description": "Salary payment",
+        "amount": 5000
+       },
+      {
+         "id":3,
+         "date": "2024-01-05",
+        "description": "Supermarket",
+        "amount": -300
+       },
+      {
+         "id":4,
+         "date": "2024-01-03",
+        "description": "Groceries",
+        "amount": -120
+       },
+       {
+        "id":5,
+        "date": "2024-01-01",
+         "description": "Transport",
+         "amount": -50
+       }
+      ]
+   }
